@@ -1,0 +1,52 @@
+# 开发环境
+
+database:
+  sharding:
+    split:
+      # 分库
+      dbSize: 2
+      # 分表
+      tableSize: 2
+
+    # 数据源
+    ds0:
+      url: jdbc:mysql://127.0.0.1:3306/test_0?useUnicode=true&characterEncoding=utf8mb4&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+      username: root
+      password: 123456
+      initialSize: 1
+      minIdle: 1
+      maxActive: 5
+
+    ds1:
+      url: jdbc:mysql://127.0.0.1:3306/test_1?useUnicode=true&characterEncoding=utf8mb4&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+      username: root
+      password: 123456
+      initialSize: 1
+      minIdle: 1
+      maxActive: 5
+
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+    database: 0
+    timeout: 3000
+    pool:
+      min-idle: 0
+      max-idle: 8
+      max-active: 8
+      max-wait: 0
+
+rocketmq:
+  addr:
+  accessKey:
+  secretKey:
+  groupId:
+  maxReconsumeTimes: 3
+  sendMsgTimeoutMillis: 3000
+
+# Swagger API doc
+api:
+  doc:
+    enable: false

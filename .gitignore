@@ -1,0 +1,57 @@
+# Concourse
+concourse/credentials.yml
+
+# Misc
+*~
+.#*
+dependency-reduced-pom.xml
+.DS_Store
+data/
+tmp/
+*.sw[op]
+*.class
+classes/
+test.log
+*.log
+logs/
+work/
+.bower-*
+lib/
+dist/
+*.tar.gz
+
+# Eclipse
+# > the following should be created by `./gradlew eclipse`
+.classpath
+.project
+# > ignore all eclipse settings by default
+.settings
+# > except the following, primarily for formatting purposes
+!.settings/org.eclipse.jdt.core.prefs
+!.settings/org.eclipse.jdt.ui.prefs
+!.settings/org.eclipse.wst.html.core.prefs
+# > other misc eclipse artifacts
+.springBeans
+bin
+atlassian-ide-plugin.xml
+
+# IDEA
+.idea
+*.iml
+*.ipr
+*.iws
+out
+
+# Gradle
+.gradle
+build
+/build
+/target
+
+# Structure101
+japp.java.hsp
+
+# jspm
+jspm_packages/
+npm-debug.log
+.cram/
